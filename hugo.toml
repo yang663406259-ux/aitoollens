@@ -1,0 +1,94 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'AIToolLens - Honest AI Tools Reviews & Comparisons'
+theme = 'PaperMod'
+[pagination]
+pagerSize = 12
+enableRobotsTXT = true
+
+[params]
+description = 'In-depth reviews, comparisons, and guides for the best AI tools in 2026. Find the perfect AI tool for your workflow.'
+author = 'AIToolLens Team'
+defaultTheme = 'auto'
+ShowReadingTime = true
+ShowShareButtons = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowPostNavLinks = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+
+[params.homeInfoParams]
+Title = "Find the Best AI Tools for Every Task"
+Content = "In-depth reviews, honest comparisons, and practical guides for AI tools that actually work."
+
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:hello@aitoollens.com"
+
+[menu]
+
+[[menu.main]]
+identifier = "reviews"
+name = "Reviews"
+url = "/categories/reviews/"
+weight = 5
+
+[[menu.main]]
+identifier = "guides"
+name = "Guides"
+url = "/categories/guides/"
+weight = 10
+
+[[menu.main]]
+identifier = "comparisons"
+name = "VS"
+url = "/categories/comparisons/"
+weight = 15
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 20
+
+[[menu.main]]
+identifier = "privacy"
+name = "Privacy"
+url = "/privacy-policy/"
+weight = 25
+
+[markup]
+[markup.highlight]
+style = 'dracula'
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params.assets]
+favicon = "/favicon.ico"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[params.googleAnalytics]
+# Replace with your GA4 measurement ID when ready
+# id = "G-XXXXXXXXXX"
+
+[params.adsense]
+# Replace with your AdSense publisher ID when ready
+# publisherId = "ca-pub-XXXXXXXXXXXXXXXX"

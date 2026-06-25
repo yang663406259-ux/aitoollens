@@ -1,0 +1,18 @@
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.875rem;
+    color: var(--secondary);
+}
+.footer-links a {
+    color: var(--primary);
+    margin: 0 0.25rem;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.footer small {
+    color: var(--secondary);
+    display: block;
+    margin-top: 0.5rem;
+}

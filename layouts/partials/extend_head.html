@@ -1,0 +1,15 @@
+{{ if site.Params.googleAnalytics.id }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalytics.id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.Params.googleAnalytics.id }}', {
+    'anonymize_ip': true,
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+</script>
+{{ end }}
+{{ if site.Params.adsense.publisherId }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.publisherId }}" crossorigin="anonymous"></script>
+{{ end }}
