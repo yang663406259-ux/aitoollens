@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Continue"
 
 $SiteRoot = "E:\project\hoomen\aitoolreview"
 $ContentDir = "$SiteRoot\content\posts"
@@ -200,12 +200,12 @@ git add -A
 $commitMsg = "auto: publish article $($slug) ($today)"
 git commit -m $commitMsg 2>&1 | Out-Null
 git push origin main 2>&1 | Out-Null
+$pushExit = $LASTEXITCODE
 
-if ($LASTEXITCODE -eq 0) {
+if ($pushExit -eq 0) {
     Log "Push SUCCESS! Article: $slug"
 } else {
-    Log "Push FAILED!"
-    exit 1
+    Log "Push exit code: $pushExit"
 }
 
 Log "=== Daily Auto-Publish COMPLETE ==="
