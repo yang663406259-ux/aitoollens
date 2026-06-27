@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Anthropic Veterans’ Startup Seeks to Help Scientists Develop Their Own AI - WSJ"
 date: 2026-06-27
 lastmod: 2026-06-27

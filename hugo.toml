@@ -5,6 +5,7 @@ theme = 'PaperMod'
 [pagination]
 pagerSize = 12
 enableRobotsTXT = true
+buildFuture = true
 
 [params]
 description = 'In-depth reviews, comparisons, and guides for the best AI tools in 2026. Find the perfect AI tool for your workflow.'
